@@ -35,7 +35,7 @@ namespace libCommerciaux
         public int getPuissanceVoiture() 
         {
             return puissanceVoiture;
-        }
+        }//hello
         public void ajout_note(NoteFrais note_fr1)
         {
             mesNotes.Add(note_fr1);
