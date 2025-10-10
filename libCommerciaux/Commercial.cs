@@ -43,7 +43,7 @@ namespace libCommerciaux
 
         public override string ToString()
         {
-            return $"No m : {nom} Prénom : {prenom} Puissance voiture : {puissanceVoiture} Categorie : {categorie}";
+            return $"Nom : {nom} Prénom : {prenom} Puissance voiture : {puissanceVoiture} Categorie : {categorie}";
         }
 
         public void ajouterNoteFrais(NoteFrais f) 
