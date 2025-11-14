@@ -19,13 +19,15 @@ namespace libCommerciaux
             this.mesNotes = new List<NoteFrais>();
         }
 
-        public string getNom()
+        public string Nom
         {
-            return nom;    
+            get {  return nom; }
+            set { nom = value; }
         }
-        public string getPrenom()
+        public string Prenom
         {
-            return prenom;
+            get { return prenom; }
+            set { prenom = value; }
         }
 
         public char getCategorie()
@@ -35,25 +37,34 @@ namespace libCommerciaux
         public int getPuissanceVoiture() 
         {
             return puissanceVoiture;
-        }//hello
-        public void ajout_note(NoteFrais note_fr1)
-        {
-            mesNotes.Add(note_fr1);
         }
+
+        public List<NoteFrais> MesNotes
+        {
+            get { return mesNotes; }
+            set {mesNotes = value; }
+        }
+       
 
         public override string ToString()
         {
             return $"Nom : {nom} Prénom : {prenom} Puissance voiture : {puissanceVoiture} Categorie : {categorie}";
         }
 
-        public void ajouterNoteFrais(NoteFrais f) 
+        public void AjouterNoteFrais(NoteFrais f) 
         {
             this.mesNotes.Add(f);
         }
-
+        public int PuissanceVoiture
+        {
+            get { return puissanceVoiture; }
+            set { puissanceVoiture = value; }
+        }
         public List<NoteFrais> getMesNoteFrais()
         {
             return mesNotes;
         }
+
     }
 }
+
